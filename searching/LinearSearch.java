@@ -1,22 +1,22 @@
 package searching;
 public class LinearSearch{
-    public static int linearSearch(int[] arr, int target) {
-        for(int i=0;i<arr.length;i++){
-            if(arr[i]==target)
+    public static int LinearSearching(int[] nums,int target){
+        for(int i=0;i<nums.length;i++){
+            if(nums[i] ==target){
                 return i;
+            }
         }
         return -1;
     }
     public static void main(String[] args){
-        int[] arr = {20,1,6,8,4,5,9,2,4,6,97,53,23,46,45,61};
-        int target = 97;
-        int result = linearSearch(arr,target);
+        int[] nums ={2,3,4,5,6,7,7,8,9,12,13,14,65,35,34,98};
+        int target =34;
+        int result =LinearSearching(nums, target);
         if(result !=-1){
-            System.out.println("target found at index:"+result);
+            System.out.println("target found at index: "+result);
         }
         else{
-            System.out.println("target not found");
+            System.out.println("target not found!");
         }
     }
-
 }
